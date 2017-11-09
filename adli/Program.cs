@@ -37,7 +37,7 @@ namespace adli
                 }
                 for (var i = 0; i < list.Count; i++)
                 {
-                    Console.WriteLine("{0}, {1}, {2:0.0}, {3}", i, list[i].Name, (float)list[i].Temperature / 1000, list[i].Fan.iCurrentFanSpeed);
+                    Console.WriteLine("{0}, {1}(Bus:{2}), {3:0.0}, {4}", i, list[i].Name, list[i].Bus, (float)list[i].Temperature / 1000, list[i].Fan.iCurrentFanSpeed);
                 }
             }
         }
