@@ -42,7 +42,7 @@ namespace adli
                             Bus = adapter.BusNumber,
                             AdapterIndex = adapter.AdapterIndex
                         };
-                    }).Where(adapter => adapter.Bus != 0)
+                    }).Where(adapter => adapter.Bus > 0)
                     .GroupBy(adapter => adapter.Id).Select(group => group.First()).ToList();
                 }
             }
